@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+
+
+    <div class="page">
+            <!-- Title -->
+         <h1 >CRUD Application</h1>
+    </div> 
+    
+    <div class="form-container">
+    <!-- Form -->
+    <form>
+        <label for="First-Name">first name</label>
+        <input type="text" name="First-Name" placeholder="Enter Your Name" id="firstname" required>
+        
+        <label for="Last-Name"> last name</label>
+        <input type="text" name="Last-Name" placeholder="Enter Your Last Name" id="lastname" required>
+
+        <label for="Phone-Number"> Phone Number</label>
+        <input type="number" name="Phone-Number" placeholder="Enter Your Phone Number " id="phonenumber" required>
+        
+       <button class="Submit-button" id="submit" >Submit</button>
+    </form>
+            <p id="addtext" style="color: red; font-family: sans-serif; font-weight: bold;"></p>
+    </div>
+ 
+
+
+    <table>
+        <thead class="titles">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Number </th>
+            <th>Actions</th>
+        </thead>
+
+        <tbody id="tableBody">
+      <tr>
+                <td>dear</td>
+                <td>programmer</td>
+                <td>89897</td>
+                <td>
+                    <button id="edit-button">Edit</button>
+                    <button id="delete-button" onclick="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+         
+        </tbody>
+
+
+    </table>
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

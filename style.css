@@ -1,0 +1,100 @@
+/* main things */
+
+body{
+    background-color: hsl(225, 24%, 23%);
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+h1{
+    color: aliceblue;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+/* title and form */
+.page{ 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{ 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+.form-container{ 
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+label{
+    font-family: sans-serif;
+    color: aliceblue;
+    margin-top: 10px;
+}
+
+input{
+   width: 500px ;
+   padding: 10px;
+   margin-top: 5px;
+}
+
+.Submit-button{
+    background-color: rgb(38, 187, 117);
+    color: aliceblue;
+    height: 30px;
+    width: 70px;
+    border-radius: 7px;
+    border-color: rgb(2, 124, 67);
+    margin-top: 10px ;
+}
+
+#edit-button{
+    background-color: rgb(255, 166, 0);
+    border-color: rgb(255, 166, 0);
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+    
+}
+#delete-button{
+    background-color: rgb(197, 39, 11);
+    color: aliceblue;
+    border-color: rgb(255, 53, 17);
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+
+    
+}
+
+
+/* table */
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th {
+    background-color: rgb(15, 12, 12);
+    color:aliceblue;
+    font-family: sans-serif;
+    font-weight: 300;
+    border-bottom: 1px solid #ddd;
+    padding: 3px;
+}
+
+
+td{
+    background-color: rgb(70, 70, 70);
+    color: rgb(226, 226, 226);
+    border-bottom: 1px solid #ddd;
+    font-family: sans-serif;
+    padding: 3px ;
+    text-align: center ;
+}
