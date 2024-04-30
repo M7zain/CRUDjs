@@ -31,8 +31,7 @@ document.getElementById("submit").addEventListener("click", (event) => {
 
 }); 
 
-
-function editRow(button){ 
+ function editRow(button) { 
 
     let row = button.parentNode.parentNode;
     let cells = row.getElementsByTagName("td"); 
@@ -41,27 +40,27 @@ function editRow(button){
     let lastName  = cells[1].textContent; 
     let phoneNumber = cells[2].textContent; 
 
+    document.getElementById("firstname").value = firstName;
+    document.getElementById("lastname").value = lastName;
+    document.getElementById("phonenumber").value = phoneNumber;
+
     document.getElementById("addtext").textContent = `you are editing ${firstName}!` ;
-    
+    document.getElementById("submit").style.display = "none"
 
-    let editedRow = document.getElementsByTagName("tr");
-
-    editedRow.innerHTML = `
-    <td>${firstName}</td>
-    <td>${lastName}</td>
-    <td>${phoneNumber}</td>
-    <td>
-        <button id="edit-button" onclick ="editRow(this)" >Edit</button>
-        <button id="delete-button" onclick="deleteRow(this)">Delete</button>
-    </td>
-`;
-
-    row.parentNode.insertBefore(editedRow, row); 
-    row.parentNode.removeChild(row); 
+    document.getElementById("edit").addEventListener("click" , (e) => {
+        e.preventDefault();
+        cells[0].textContent =     document.getElementById("firstname").value;
+        cells[1].textContent =     document.getElementById("lastname").value ;
+        cells[2].textContent =     document.getElementById("phonenumber").value;
+        document.getElementById("submit").style.display = "block";
+    }); 
 
 
 
 }
+
+
+
 
 
 

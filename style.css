@@ -53,6 +53,16 @@ input{
     margin-top: 10px ;
 }
 
+.edit-button{
+    background-color: rgb(197, 117, 25);
+    color: aliceblue;
+    height: 30px;
+    width: 70px;
+    border-radius: 7px;
+    border-color: rgb(207, 197, 57);
+    margin-top: 10px ;
+}
+
 #edit-button{
     background-color: rgb(255, 166, 0);
     border-color: rgb(255, 166, 0);
